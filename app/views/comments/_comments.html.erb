@@ -6,6 +6,13 @@
         <strong><%= comment.username %>:</strong>
           <%= comment.body %>
       </p>
+      <div class="text-right">
+      <%= link_to 'X', [comment.post, comment],
+        method: :delete,
+        data: { confirm: 'Are you sure?' },
+        :class => "btn btn-danger"
+      %>
+    </div>
     </div>
   </div>
 <% end %>
