@@ -1,0 +1,11 @@
+<h3>Comments</h3>
+<% @post.comments.each do |comment| %>
+  <div class="card" style="width: 18 rem; margin: 0.5em;">
+    <div class="card-body">
+      <p>
+        <strong><%= comment.username %>:</strong>
+          <%= comment.body %>
+      </p>
+    </div>
+  </div>
+<% end %>
