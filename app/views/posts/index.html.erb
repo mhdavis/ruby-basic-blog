@@ -1,6 +1,6 @@
 <h1>Blog Posts</h1>
 
-<!-- note no <%= because this is logic, not an output -->
+<%-# note no <%= because this is logic, not an output -%>
 <% @posts.each do |post| %>
   <h3><%= post.title %></h3>
   <p><%= post.body %></p>
